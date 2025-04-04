@@ -1,0 +1,26 @@
+#include <iostream>
+#include <thread>
+#include <chrono>
+
+using namespace std;
+
+void trafficLight() {
+    while (true) {
+        // Green light
+        cout << "Green light: GO" << endl;
+        this_thread::sleep_for(chrono::seconds(5)); // Green light for 5 seconds
+
+        // Yellow light
+        cout << "Yellow light: SLOW DOWN" << endl;
+        this_thread::sleep_for(chrono::seconds(2)); // Yellow light for 2 seconds
+
+        // Red light
+        cout << "Red light: STOP" << endl;
+        this_thread::sleep_for(chrono::seconds(5)); // Red light for 5 seconds
+    }
+}
+
+int main() {
+    trafficLight();
+    return 0;
+}
