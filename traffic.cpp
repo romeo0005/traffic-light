@@ -15,7 +15,7 @@ void trafficLight() {
         this_thread::sleep_for(chrono::seconds(2)); // Yellow light for 2 seconds
 
         
-        cout <<  STOP" << endl;
+        cout << "Red light: STOP" << endl;
         this_thread::sleep_for(chrono::seconds(5)); // Red light for 5 seconds
     }
 }
