@@ -8,7 +8,7 @@ void trafficLight() {
     while (true) {
         
         cout << "Green light: GO" << endl;
-        this_thread::sleep_for(chrono::seconds(5)); // Green light for 5 seconds
+        this_thread::sleep_for(chrono::seconds(5)); // s
 
     
         cout << "Yellow light: SLOW DOWN" << endl;
